@@ -1,0 +1,47 @@
+{
+	"tracks": [
+		{
+			"url": "./assets/Al Bowlly - If Anything Happened To You.mp3",
+			"title": "If Anything Happened To You",
+			"artist": "Al Bowlly",
+			"genre": "Swing",
+			"album": "unknown"
+		},
+		{
+			"url": "./assets/Allan Gray - Swing Doors.mp3",
+			"title": "Swing Doors",
+			"artist": "Allan Gray",
+			"genre": "Swing",
+			"album": "unknown"
+		},
+		{
+			"url": "./assets/Benny Goodman - Lets Dance.mp3",
+			"title": "Lets Dance",
+			"artist": "Benny Goodman",
+			"genre": "Swing",
+			"album": "Lets Dance"
+		},
+		{
+			"url": "./assets/Ella Fitzgerald - I Want To Be Happy.mp3",
+			"title": "I Want To Be Happy",
+			"artist": "Ella Fitzgerald",
+			"genre": "Swing",
+			"album": "unknown"
+		},
+		{
+			"url": "./assets/Ella Fitzgerald - Into Each Life Some Rain Must Fall.mp3",
+			"title": "Into Each Life Some Rain Must Fall",
+			"artist": "Ella Fitzgerald",
+			"genre": "Swing",
+			"album": "unknown"
+		},
+		{
+			"url": "./assets/Shaindlin Jack - Let's Go Sunning.mp3",
+			"title": "Lets's Go Sunning",
+			"artist": "Shaindlin Jack",
+			"genre": "Swing",
+			"album": "unknown"
+		}
+
+	]
+}
