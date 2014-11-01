@@ -1,0 +1,1 @@
+window.mp3PlayerApp = angular.module('mp3player', []);

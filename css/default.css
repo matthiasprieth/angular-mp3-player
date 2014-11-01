@@ -1,0 +1,171 @@
+body {
+    /*padding: 100px;*/
+    background-image: url("../img/background.jpg");
+    font-family: "Arial";
+    color: #565353;
+}
+
+.textContainer {
+    padding: 1% 0%;
+    height: 150px;
+    font-size: 120%;
+}
+
+#strengthInput {
+    margin: 1%;
+}
+
+#sliderDescription {
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+.slider {
+    height: 20px;
+    position: relative;
+}
+
+.hSlider {
+    width: 700px;
+    height: 20px;
+    position: relative;
+}
+
+.track {
+    width: 700px;
+    height: 100%;
+    background-color: #B9B9B9;
+    border: 1px solid #B9B9B9;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+#volumeView .track {
+    width: 100px;
+}
+
+.thumb {
+    width: 19px;
+    height: 19px;
+    background: #DEDEDE;
+    position: absolute;
+    top: 0;
+    border: 1px solid #B0B0B0;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.thumb.down {
+    background: white;
+}
+
+#output {
+    color: gray;
+    font-size: 90%;
+}
+
+.trackinfo {
+    cursor: move;
+}
+
+.trackListElement.over {
+    border-bottom: 2px solid lightgrey;;
+}
+
+#progress {
+    position: absolute;
+    background-image: url("../img/sliderBackground.jpg");
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    height: 20px;
+    /*-webkit-transition: width 0.5s ease-in;*/
+}
+
+#played {
+    position: absolute;
+    background-color: #DEDEDE;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    height: 20px;
+}
+
+#trackListView {
+    background-image: url("../img/sliderBackground.jpg");
+    background-repeat: repeat-x;
+    background-size: cover;
+    clear: both;
+    border: 2px solid #666666;
+    background-color: #ccc;
+    margin-right: 5px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 2%;
+    color: #C8C8C8;
+}
+
+#trackInfoView {
+    padding: 1% 0;
+}
+
+#volumeBackground {
+    position: absolute;
+    background-image: url("../img/sliderBackground.jpg");
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    height: 20px;
+}
+
+.activeTrack {
+    font-weight: bold;
+    background-color: lightgrey;
+    color: #565353;
+}
+
+#time {
+    width: 100px;
+    float: left;
+}
+
+#timeLeft {
+    float: right;
+}
+
+#timeLineView {
+    float: left;
+}
+
+.icon-volume-up {
+    float: left;
+    margin: 2.5% 0%;
+    margin-right: 1%;
+    margin-left: 3%;
+}
+
+.icon-volume-off {
+    float: left;
+    margin: 2.5% 0%;
+    margin-right: 1%;
+    margin-left: 3%;
+}
+
+#volumeView {
+    float: left;
+    margin: 2% 0%;
+}
+
+.content {
+    padding-left: 11%;
+    padding-right: 11%;
+}
+
+#playerControlsView {
+    margin: 2% 2%;
+    float: left;
+}
+
+
+
+
+

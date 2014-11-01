@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html ng-app="mp3player">
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="vendor/normalize.css"/>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/default.css"/>
+</head>
+<body>
+    <script type="text/ng-template" id="template/trackInfo.html">
+        <div id="trackInfoView">
+            <span><b class="track-title">Titel:</b> {{trackTitle}} | </span>
+            <span><b class="track-artist">Artist:</b> {{trackArtist}} | </span>
+            <span><b class="track-genre">Genre:</b> {{trackGenre}} | </span>
+            <span><b class="track-album">Album:</b> {{trackAlbum}} </span>
+        </div>
+    </script>
+
+    <script type="text/ng-template" id="template/timeLine.html">
+        <div>
+            <div id="timeLineView" class="slider" data-orientation="horizontal" data-min="0"
+                 data-snap-interval="10" data-max="100" data-value="0">
+            </div>
+            <div id="time"> {{time}} </div>
+            <div id="timeLeft"> {{timeLeft}} </div>
+        </div>
+    </script>
+
+    <script type="text/ng-template" id="template/playerControls.html">
+        <div id="playerControlsView">
+            <div class="player-controls btn-group">
+                <button ng-click="playOrPause()" id="playOrPausebtn" class="btn btn-large btn-inverse"><i class="icon-play icon-white"></i></button>
+                <button ng-click="stop()" id="stopbtn" class="btn btn-large btn-inverse"><i class="icon-stop icon-white"></i></button>
+                <button ng-click="previousTrack()" id="prevbtn" class="btn btn-large btn-inverse"><i class="icon-fast-backward icon-white"></i></button>
+                <button ng-click="nextTrack()" id="nextbtn" class="btn btn-large btn-inverse"><i class="icon-fast-forward icon-white"></i></button>
+                <button ng-click="shufflePlaylist()" id="shufflebtn" class="btn btn-large btn-inverse"><i class="icon-random icon-white"></i></button>
+            </div>
+        </div>
+    </script>
+
+    <script type="text/ng-template" id="template/volumeSlider.html">
+        <div>
+            <i id="btnVolume" ng-click="muteOrUnmuteBtn()" class="icon-volume-up"></i>
+            <div id="volumeView"  class="slider" data-orientation="horizontal" data-min="0" data-snap-interval="10"
+                 data-max="1" data-value="0.8">
+            </div>
+        </div>
+    </script>
+
+    <script type="text/ng-template" id="template/trackList.html">
+        <div id="trackListView">
+            <div ng-repeat="track in getTrackList()" ng-dblclick="playSongWithId(this.$index)" class="trackListElement" draggable="true"
+            id="{{track.id}}"><b>{{track.title}}</b> - {{track.artist}}</div>
+        </div>
+    </script>
+
+    <div ng-controller="PlayerCtrl">
+        <div class="container">
+            <div class="well">
+                <div class="page-header">
+                    <h1>MP3-WebPlayer <small>by Prieth Matthias</small></h1>
+                </div>
+                <div class="content">
+                    <trackinfoview></trackinfoview>
+                    <timelineview></timelineview>
+                    <playercontrolsview></playercontrolsview>
+                    <volumesliderview></volumesliderview>
+                    <tracklistview></tracklistview>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="vendor/jquery-1.9.1.min.js"></script>
+    <script src="vendor/angular.js"></script>
+    <script src="vendor/underscore.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/views.js"></script>
+    <script src="js/sliderModel.js"></script>
+</body>
+</html>
+
