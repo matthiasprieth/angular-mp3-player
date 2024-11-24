@@ -6,6 +6,6 @@ See tracklist.json to make your own playlist.
 
 <!-- - [live demo](http://users.multimediatechnology.at/~fhs33735/angular-mp3-player/) -->
 
-- [live demo](https://cdn.rawgit.com/matthiasprieth/angular-mp3-player/master/index.html)
+- [live demo](https://matthiasprieth.github.io/angular-mp3-player/)
 
 ![angular-mp3-player](https://github.com/matthiasprieth/angular-mp3-player/blob/master/assets/preview.jpg)
